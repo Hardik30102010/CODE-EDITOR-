@@ -1,0 +1,59 @@
+<html>
+ <Head>
+  <Title>
+   TITLE NAME HUUUUU
+ </Title>
+   body{
+}
+   Buttons{
+}
+   p{
+}
+   
+    .page { 
+      display: none;
+      text-align: center;
+      min-height: 100vh;
+      padding-top: 50px;
+    }
+    .active { 
+      display: block;
+    }
+  
+  <Style>
+  </Style>
+ </Head>
+ <Body>
+  <Div id="home" class=" active page">
+   <div class="head">
+    <H1><B>NAME</B></H1>
+    <Br>
+    <Br>
+   </div>
+   <Hr>
+    <Div class="home-button">
+    <button onclick="showPage('id')">button</button>
+    <button onclick="showPage('id')">button</button>
+<button onclick="showPage('id')">button</button>
+     <Br>
+     <Br>
+     <Hr>
+     <Br>
+      <Footer>
+        <P> &0169; HA. All rights reserved.</p>
+        <Br>
+        <Hr>
+        <Br> <br>
+        <P>Suggest us on <a href="https://github.com/Hardik30102010/XYZ-.git >GitHub</a>.</p>
+   <Br>
+      </Footer>
+   </Div>
+  </Div>
+  <Script>
+   function showPage(id) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+  }
+  </Script>
+ </Body>
+  </html>
