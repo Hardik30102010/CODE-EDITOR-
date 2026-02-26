@@ -54,6 +54,25 @@
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
     document.getElementById(id).classList.add('active');
   }
+    function downloadText() {
+    
+    const text = document.getElementById("T").value;
+
+    
+    const blob = new Blob([text], { type: "text/plain" });
+
+   
+    const url = URL.createObjectURL(blob);
+
+    
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "code_file.txt"; // You can change extension to .js or .html
+    link.click();
+
+   
+    URL.revokeObjectURL(url);
+   }
   </Script>
  </Body>
   </html>
