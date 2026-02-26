@@ -73,6 +73,11 @@
    
     URL.revokeObjectURL(url);
    }
+   function copyT() {
+  const el = document.querySelector('[value="T"]');
+  navigator.clipboard.writeText(el.value || el.innerText);
+}
+
   </Script>
  </Body>
   </html>
