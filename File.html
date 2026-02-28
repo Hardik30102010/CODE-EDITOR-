@@ -108,10 +108,9 @@
   </div>
   <script>
     function showPage(id) {
-      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-      const target = document.getElementById(id);
-      if(target) target.classList.add('active');
-    }
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+  }
     function downloadText() {
       const text = document.getElementById("T").value;
       const blob = new Blob([text], { type: "text/plain" });
