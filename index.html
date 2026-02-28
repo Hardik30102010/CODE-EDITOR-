@@ -9,9 +9,11 @@
       text-align: center;
       color: #ccc;
       font-family: Arial, sans-serif;
-      margin: 0;
+      
     }
-    .points { text-align: left; }
+    .points {
+      text-align: left;
+    }
     footer {
       background-color: #1a1a1a;
       padding: 10px;
@@ -59,11 +61,23 @@
       border-top: 2px solid #333;
       width: 100%;
     }
-    a:link { color: blue; text-decoration: underline; }
-    a:visited { color: purple; }
-    a:hover, a:active { font-weight: bold; }
-    .load { color: #00ff00; font-family: monospace; }
-    .loader-box { margin-top: 50px; }
+    
+    a:hover, a:active {
+  color: #cc0cf7;
+  font–weight: bold;
+    }
+    a:link, a:visited {
+     color: #0000ff;
+    text-decoration: underline;
+    font–weight: normal;
+      }
+    .load {
+      color: #00ff00; 
+      font-family: monospace; 
+    }
+    .loader-box {
+      margin-top: 50px;
+    }
     .bar {
       width: 300px;
       height: 20px;
@@ -79,7 +93,13 @@
       border-radius: 20px;
       animation: loadBar 3s linear forwards;
     }
-    @keyframes loadBar { from { width: 0%; } to { width: 100%; } }
+    @keyframes loadBar {
+      from { width: 0%;
+           } 
+      to{
+        width: 100%;
+      } 
+    }
   </style>
 </head>
 <body>
@@ -103,7 +123,7 @@
       <button onclick="copyT()">Copy Code</button>
     </div>
     <footer>
-      <p>Suggest us on <a href="https://github.com">GitHub</a>.</p>
+      <p>Suggest us on <a href="https://github.com/Hardik30102010/HAproX.git">GitHub</a>.</p>
     </footer>
   </div>
   <script>
