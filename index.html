@@ -181,6 +181,16 @@
     
 
   </div>
+  <div id="codesep" class="page">
+    <div class="main">
+  <div class="editor">
+    <textarea id="html" placeholder="Enter your HTML code here" ><h1>Hello  </h1></textarea>
+    <textarea id="css" placeholder=" Enter your CSS code here">h1 { color: red; }</textarea>
+    <textarea id="js" placeholder="Enter your Javascript code here" >console.log("Working");</textarea>
+  </div>
+  <iframe id="output"></iframe>
+    </div>
+  </div>
   <script>
     function showPage(id) {
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
