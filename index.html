@@ -14,6 +14,7 @@
     h1:hover{
       transform: rotateY(360deg);
       transition: 5s;
+    }
     .points {
       text-align: left;
     }
@@ -121,12 +122,15 @@
 <body>
   <div id="loading" class="page active">
     <div style="margin-top:100px;">
-        <img src="Logo.png" alt="logo" width="100" height="100" style="background:#333;">
+        <img src="Logo.png" alt="logo" width="100" height="100">
         <div class="loader-box">
           <div class="bar"><div class="progress"></div></div>
           <div class="load"><h4>LOADING...</h4></div>
         </div>
     </div>
+    <br>
+    <p>&copy; 2026 HARDIK AWANA. All rights reserved.</p>
+  
   </div>
   <div id="home" class="page">
     <div class="head">
@@ -136,14 +140,16 @@
     <br>
     <br>
     <br>
-    <button onclick="showpage('code')"> START CODING </button>
+    <button onclick="showPage('code')"> START CODING </button>
     <BR>
-    <P>&0169; 2026 HARDIK AWANA.All rights reserved.</P>
+    <footer>
+      <p>Suggest us on</p>
+    </footer>
   </div>
   <div id="code" class="page">
     
       <nav>
-        <button onclick="showpage('home')">BACK</button>
+        <button onclick="showPage('home')">BACK</button>
              <button onclick="downloadText()">Download</button>
       <button onclick="copyT()">Copy Code</button>
     <select onchange="changeFontSize(this.value)">
