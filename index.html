@@ -11,6 +11,9 @@
       font-family: Arial, sans-serif;
       
     }
+    h1:hover{
+      transform: rotateY(360deg);
+      transition: 5s;
     .points {
       text-align: left;
     }
@@ -55,6 +58,7 @@
     button:hover {
       border: solid 3px #00ff00;
       transform: scale(1.1);
+      background-color: #cc0cf7;
     }
     hr {
       border: none;
@@ -74,7 +78,7 @@
       font-weight: bold;
       
       }
-    textarea{
+    .text{
       min-height: calc(100vh - 40px); 
       min-width: 100vw;
       font-size: 16px;
@@ -126,17 +130,35 @@
   </div>
   <div id="home" class="page">
     <div class="head">
-      <h1>HAproX IDE</h1>
+      <h1><B>HAppx IDE</B></h1>
     </div>
     <hr>
-    <textarea id="T" placeholder="Type your code here..."></textarea>
-    <div class="home-buttons">
-      <button onclick="downloadText()">Download</button>
+    <br>
+    <br>
+    <br>
+    <button onclick="showpage('code')"> START CODING </button>
+    <BR>
+    <P>&0169; 2026 HARDIK AWANA.All rights reserved.</P>
+  </div>
+  <div id="code" class="page">
+    
+      <nav>
+        <button onclick="showpage('home')">BACK</button>
+             <button onclick="downloadText()">Download</button>
       <button onclick="copyT()">Copy Code</button>
+    <select onchange="changeFontSize(this.value)">
+  <option value="14">14px</option>
+  <option value="16" selected>16px</option>
+  <option value="18">18px</option>
+  <option value="20">20px</option>
+  <option value="24">24px</option>
+    </select>
+      </nav>
+    <div class="text">
+    <textarea id="T" placeholder="Type your code here..."></textarea>
     </div>
-    <footer>
-      <p>Suggest us on <a href="https://github.com/Hardik30102010/HAproX.git">GitHub</a>.</p>
-    </footer>
+    
+
   </div>
   <script>
     function showPage(id) {
@@ -162,7 +184,7 @@
       showPage("home");
     });
     function changeFontSize(size){
-  document.querySelector("textarea").style.fontSize = size + "px";
+  document.querySelector(".text").style.fontSize = size + "px";
     }
   </script>
 </body>
